@@ -25,12 +25,22 @@ Page({
       success (res) {
         // tempFilePath可以作为img标签的src属性显示图片
         const tempFilePaths = res.tempFilePaths
-        wx.setStorageSync('imgUrl', tempFilePaths)
-        console.log(tempFilePaths)
-        that.setData({
-          imgUrl:tempFilePaths[0]
+        wx.saveFile({
+          tempFilePath: tempFilePaths[0],
+          success (res) {
+            const savedFilePath = res.savedFilePath
+            wx.setStorageSync('imgUrl', savedFilePath)
+            that.setData({
+                imgUrl:savedFilePath
+              })
+          }
         })
-        console.log(that.data.imgUrl)
+        // wx.setStorageSync('imgUrl', tempFilePaths)
+        // console.log(tempFilePaths)
+
+        // that.setData({
+        //   imgUrl:tempFilePaths[0]
+        // })
       }
     })
   },

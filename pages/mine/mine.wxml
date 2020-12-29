@@ -2,8 +2,11 @@
 <view bindtap="navToMe"
   style="width:80vw;height:30%;background:#F7F5F5;box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.16);opacity: 1;border-radius:0 0 3.6vh 3.6vh;position:absolute;left:10%;top:0%">
   <text style="position:absolute;top:10%;left:8%;font-size:50rpx;font-weight:700">{{name}}</text>
-  <view  class="cu-avatar xl round"
+  <view wx:if="{{avatarUrl}}" class="cu-avatar xl round"
       style="margin-top:15rpx; margin-left:400rpx; background-image:url({{avatarUrl}});">
+    </view>
+    <view wx:else class="cu-avatar xl round"
+      style="margin-top:15rpx; margin-left:400rpx; background-image:url('/assets/icon/我的icon.png');">
     </view>
   <!-- <view
     style="width:18vw;height:18%;background:#A9A8EC;box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.16);opacity: 1;border-radius:3.6vh;position:absolute;left:30%;top:12%">

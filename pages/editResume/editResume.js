@@ -13,16 +13,23 @@ Page({
       shetuanExperience: '',
       projectExperience: '',
       shixiExperience: ''
-    }
+    },
+    editDate:''
 
   },
 
   formSubmit: function (e) {
     var that = this;
     var resumeInformation = e.detail.value;
+    var date = new Date()
+    var editDate = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate()+' '+date.getHours()+':'+date.getMinutes()
+
     wx.setStorageSync('resumeInformation', resumeInformation);
+    wx.setStorageSync('editDate', editDate);
+
     that.setData({
-      resumeInfo:resumeInformation
+      resumeInfo:resumeInformation,
+      editDate:editDate,
     })
 
     wx.request({
