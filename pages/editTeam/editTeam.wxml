@@ -1,0 +1,82 @@
+<view class="cu-form-group margin-top">
+<view class="title">招募标题</view>
+<input placeholder=""selection-start="-1"selection-end="-1"cursor="-1">
+</input>
+</view>
+
+<view class="subtitle">赛事标签</view>
+
+<view class="cu-form-group" style="min-height:80rpx">
+<view class="title" style="font-size:30rpx">标签一</view>
+<input placeholder="标签将用于首页的竞赛筛选"selection-start="-1"selection-end="-1"cursor="-1">
+标签将用于首页的竞赛筛选
+</input>
+</view>
+
+<view class="cu-form-group" style="min-height:80rpx">
+<view class="title" style="font-size:30rpx">标签二</view>
+<input placeholder="标签将用于首页的竞赛筛选"selection-start="-1"selection-end="-1"cursor="-1">
+标签将用于首页的竞赛筛选
+</input>
+</view>
+
+<view class="cu-form-group" style="min-height:80rpx">
+<view class="title" style="font-size:30rpx">标签三</view>
+<input placeholder="标签将用于首页的竞赛筛选"selection-start="-1"selection-end="-1"cursor="-1">
+标签将用于首页的竞赛筛选
+</input>
+</view>
+
+<view class="subtitle">队伍描述</view>
+<view class="cu-form-group">
+<textarea bindinput="textareaAInput"maxlength="-1"placeholder=""value=" ">
+</textarea>
+</view>
+
+<view class="subtitle">招募要求</view>
+<view class="cu-form-group">
+<textarea bindinput="textareaAInput"maxlength="-1"placeholder=""value=" ">
+</textarea>
+</view>
+
+<view class="cu-form-group margin-top">
+	<view class="title">招募人数</view>
+	<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+		<view class="picker">	
+    {{index?picker[index]:'请选择'}}
+		</view>
+	</picker>
+</view>
+
+	<view class="cu-form-group">
+		<view class="title">设置截止时间</view>
+		<picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+			<view class="picker">
+      {{date}}
+			</view>
+		</picker>
+	</view>
+
+<view class="cu-form-group margin-top">
+<view class="title">插入我的名片</view>
+<switch class="purple sm">
+</switch>
+</view>
+
+<view class="mainContent resume-publish padding  shadow-warp row" >
+  <view class="cu-avatar lg round margin-left"style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big25002.jpg);"></view>
+  <view class="column">
+  <view class="row">
+   <text class="title" style="font-size:45rpx;font-weight:700">小U</text>
+  
+  <view class="homeMainTeamCardActionBar">
+			<view class="homeMainTeamCardActionBarBadge">
+						<view class="miniBadge" style="background-color:#A9A8EC">
+		2018级
+			</view>
+			</view>
+  </view>
+</view>
+   <text class="title" style="font-size:30rpx;font-weight:500">新闻传播学院/广告学</text>
+   </view>
+</view>

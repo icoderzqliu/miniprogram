@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "list": "/components/message-list/list",
+    "item": "/components/message-item/item"
+  },
+  "backgroundColor":"#6D6AEF"
+}

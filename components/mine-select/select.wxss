@@ -1,0 +1,7 @@
+/* components/mine-select/select.wxss */
+.outline{
+height: 70rpx;
+width: 80rpx;
+background-color: #6D6AEF;
+
+}

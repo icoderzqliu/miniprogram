@@ -1,0 +1,5 @@
+<view>
+<text class="title" style="position:absolute;left:37%;top:3.5%">消息列表</text>
+<list></list>
+<item></item>
+</view>

@@ -1,0 +1,12 @@
+/* pages/mine/mine.wxss */
+ page {
+  background-color: #6D6AEF;
+} 
+
+.outline{
+  height: 70rpx;
+  width: 80rpx;
+  background-color: #6D6AEF;
+  
+  }
+  

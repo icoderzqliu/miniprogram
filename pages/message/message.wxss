@@ -1,0 +1,12 @@
+/* pages/message/message.wxss */
+.title{
+  font-size: 45rpx;
+  font-weight: 25rpx;
+  align-content: center;
+  justify-content: center;
+  color: #FFFFFF;
+  display: flex;
+}
+ page {
+  background-color: #6D6AEF;
+} 

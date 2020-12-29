@@ -1,0 +1,44 @@
+{
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "YOUnite",
+    "navigationBarTextStyle": "black"
+  },
+  "pages": [
+    "pages/mine/mine",
+    "pages/member/member",
+    "pages/Me/Me",
+    "pages/editTeam/editTeam",
+    "pages/history/history",
+    "pages/myteam/myteam",
+    "pages/resume/resume",
+    "pages/editResume/editResume",
+    "pages/message/message"
+  ],
+  "tabBar": {
+    "selectedColor": "#6D6AEF",
+    "list": [
+      {
+        "pagePath": "pages/message/message",
+        "text": "首页",
+        "iconPath": "/assets/icon/首页icon2.png",
+        "selectedIconPath": "/assets/icon/首页icon.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/assets/icon/消息icon2.png",
+        "selectedIconPath": "/assets/icon/消息icon.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/assets/icon/我的icon2.png",
+        "selectedIconPath": "/assets/icon/我的icon.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

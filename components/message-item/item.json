@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+        "i-badge": "../../dist/badge/index",
+        "i-divider": "../../dist/divider/index",
+        "i-avatar": "../../dist/avatar/index"
+      
+  }
+}

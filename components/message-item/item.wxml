@@ -1,0 +1,19 @@
+<view>
+<i-avatar size="large" style="position:absolute;left:10%;top:15%">张</i-avatar>
+<i-badge count="3" style="position:absolute;left:21%;top:13%">
+    <view class="demo-badge"></view>
+</i-badge>
+  <text style="position:absolute;top:13%;left:26%;font-size:45rpx;font-weight:525">张三</text>
+  <input style="position:absolute;top:19.5%;left:23%;font-size:30rpx" placeholder="【您收到一条匹配邀请】" />
+  <input style="position:absolute;top:13%;left:80%;font-size:25rpx" placeholder="12:00" />
+<view style="width:72vw;height:0.1%;background:#C9C9C9;position:absolute;left:23%;top:27%"></view>
+
+<i-avatar size="large" style="position:absolute;left:10%;top:31%">李</i-avatar>
+<i-badge count="0" style="position:absolute;left:21%;top:29%">
+    <view class="demo-badge"></view>
+</i-badge>
+  <text style="position:absolute;top:29%;left:26%;font-size:45rpx;font-weight:525">李四</text>
+  <input style="position:absolute;top:35.5%;left:23%;font-size:30rpx" placeholder="【您收到一条匹配邀请】" />
+  <input style="position:absolute;top:29%;left:80%;font-size:25rpx" placeholder="9:20" />
+<view style="width:72vw;height:0.1%;background:#C9C9C9;position:absolute;left:23%;top:43%"></view>
+</view>

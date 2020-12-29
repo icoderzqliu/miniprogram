@@ -1,0 +1,10 @@
+	<view bindtap="navToMe" style="width:80vw;height:30%;background:#F7F5F5;box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.16);opacity: 1;border-radius:0 0 3.6vh 3.6vh;position:absolute;left:10%;top:0%">
+  <text style="position:absolute;top:10%;left:8%;font-size:50rpx;font-weight:700">小U</text>
+  	<view style="width:18vw;height:18%;background:#A9A8EC;box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.16);opacity: 1;border-radius:3.6vh;position:absolute;left:30%;top:12%">
+    </view>
+  <text style="position:absolute;top:13%;left:33%;font-size:35rpx;color:#FFFFFF">未命名</text>
+  <text style="position:absolute;top:35%;left:8%;font-size:28rpx">大三</text>
+  <text style="position:absolute;top:45%;left:8%;font-size:28rpx">新闻与传播学院/传播学</text>
+  <text style="position:absolute;top:55%;left:8%;font-size:28rpx">匹配次数：5次</text>
+  <input style="position:absolute;top:70%;left:6%;" placeholder="（自我介绍）" />
+  </view>
