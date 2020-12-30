@@ -9,18 +9,7 @@ Page({
     "currentModal": null, //modal type
     "showModal": false, //show modal
     // teamName:'',
-    // teamInfo:{
-    //   "tName": "大广赛招募队员",
-    //   "tId": 0,
-    //   "tView": 15,
-    //   "tInvite": 8,
-    //   "tContact": 2,
-    //   "tInvited": 3,
-    //   "tRemain": 2,
-    //   "tLastUpdate": wx.getStorageSync('editTeamDate')
-    // }
-    "teamNames": ["大广赛招募队员", "第二个比赛队伍名"], //for select box
-    "teamInfos": [{
+    teamInfo:{
       "tName": "大广赛招募队员",
       "tId": 0,
       "tView": 15,
@@ -29,7 +18,18 @@ Page({
       "tInvited": 3,
       "tRemain": 2,
       "tLastUpdate": wx.getStorageSync('editTeamDate')
-    }] //infomation of al teams
+    }
+    // "teamNames": ["大广赛招募队员", "第二个比赛队伍名"], //for select box
+    // "teamInfos": [{
+    //   "tName": "大广赛招募队员",
+    //   "tId": 0,
+    //   "tView": 15,
+    //   "tInvite": 8,
+    //   "tContact": 2,
+    //   "tInvited": 3,
+    //   "tRemain": 2,
+    //   "tLastUpdate": wx.getStorageSync('editTeamDate')
+    // }] //infomation of al teams
     /*REF:teamInfos
     "tName":"队伍名称","tId":队伍id,"tView":阅览数,"tInvite":邀请数,"tContact":沟通中数,"tInvited":已邀请数,"tRemain":剩余名额（成员页显示）,"tLastUpdate":"最后更新日期"
     */
@@ -69,7 +69,7 @@ Page({
 
   navToMember: function () {
     wx.navigateTo({
-      url: '../member/member?tInvited={{teamInfos.tInvited}}&tRemain={{teamInfos.tRemain}}',
+      url: '../member/member?tInvited='+this.data.teamInfo.tInvited+'&tRemain='+this.data.teamInfo.tRemain,
     })
   },
 
@@ -94,7 +94,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var teamName = "teamInfo.tName"
+    var editTeamDate = "teamInfo.tLastUpdate"
+    var remainNumber = "teamInfo.tRemain"
+    var invitedNumber = this.data.teamInfo.tInvited
+    this.setData({
+      [teamName] : wx.getStorageSync('teamInformation').title,
+      [editTeamDate]:wx.getStorageSync('editTeamDate'),
+      [remainNumber]:wx.getStorageSync('teamInformation').teamNumber-invitedNumber
+    })
   },
 
   /**
