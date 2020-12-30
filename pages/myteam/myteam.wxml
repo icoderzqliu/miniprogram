@@ -2,12 +2,12 @@
 <picker bindchange="teamChange" value="{{teamNameIndex}}" range="{{teamNames}}">
 	<text style="position:absolute;top:3%;left:14%;font-size:40rpx;font-weight:700;color:white">{{teamNames[teamIndex]}}<text class="cuIcon-unfold lg text-gray" wx:if="{{teamNames.length>1}}"></text></text>
 </picker>
-<!-- <text style="position:absolute;top:9%;left:14%;font-size:28rpx;font-weight:400;color:white">上次更新：{{teamInfos[teamIndex].tLastUpdate}}</text> -->
+<text style="position:absolute;top:9%;left:14%;font-size:28rpx;font-weight:400;color:white">上次更新：{{teamInfos[teamIndex].tLastUpdate}}</text>
 <!-- <view bindtap="navToEditTeam">
 	<text style="position:absolute;top:4%;left:85%;font-size:28rpx;font-weight:400;color:white">添加</text>
-</view> -->
+</view>
 
-<!-- <button class="cu-btn bg-purple lg shadow" role="button" aria-disabled="false" style="border-radius:3vh;justify-content:right；position:absolute;top:4%;left:85%;font-size:28rpx;background:#A9A8EC;font-weight:400;color:white">添加</button> -->
+<button class="cu-btn bg-purple lg shadow" role="button" aria-disabled="false" style="border-radius:3vh;justify-content:right；position:absolute;top:4%;left:85%;font-size:28rpx;background:#A9A8EC;font-weight:400;color:white">添加</button> -->
 
 
 <view style="position:absolute;top:15%;left:2%;">

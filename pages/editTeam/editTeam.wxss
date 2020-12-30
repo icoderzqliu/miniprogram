@@ -70,3 +70,5 @@ flex-direction: column;
   border-radius: 9rpx;
   padding: 5rpx 15rpx;
 }
+
+

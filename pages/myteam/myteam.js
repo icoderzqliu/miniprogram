@@ -8,6 +8,17 @@ Page({
     "teamIndex": 0, //current team
     "currentModal": null, //modal type
     "showModal": false, //show modal
+    // teamName:'',
+    // teamInfo:{
+    //   "tName": "大广赛招募队员",
+    //   "tId": 0,
+    //   "tView": 15,
+    //   "tInvite": 8,
+    //   "tContact": 2,
+    //   "tInvited": 3,
+    //   "tRemain": 2,
+    //   "tLastUpdate": wx.getStorageSync('editTeamDate')
+    // }
     "teamNames": ["大广赛招募队员", "第二个比赛队伍名"], //for select box
     "teamInfos": [{
       "tName": "大广赛招募队员",
@@ -17,7 +28,7 @@ Page({
       "tContact": 2,
       "tInvited": 3,
       "tRemain": 2,
-      "tLastUpdate": "2020.10.16  8:00"
+      "tLastUpdate": wx.getStorageSync('editTeamDate')
     }] //infomation of al teams
     /*REF:teamInfos
     "tName":"队伍名称","tId":队伍id,"tView":阅览数,"tInvite":邀请数,"tContact":沟通中数,"tInvited":已邀请数,"tRemain":剩余名额（成员页显示）,"tLastUpdate":"最后更新日期"
@@ -58,7 +69,7 @@ Page({
 
   navToMember: function () {
     wx.navigateTo({
-      url: '../member/member',
+      url: '../member/member?tInvited={{teamInfos.tInvited}}&tRemain={{teamInfos.tRemain}}',
     })
   },
 
@@ -66,6 +77,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      
+    })
     console.log("[Todo] Here will start loading all team names.");
   },
 
