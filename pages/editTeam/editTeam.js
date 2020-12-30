@@ -91,7 +91,10 @@ Page({
   onShow: function () {
     this.setData({
       teamInfo: wx.getStorageSync('teamInformation'),
-      switchChage: wx.getStorageSync('teamInformation').cardOrNot
+      switchChage: wx.getStorageSync('teamInformation').cardOrNot,
+      name: wx.getStorageSync('myInfo').name,
+      grade: wx.getStorageSync('myInfo').grade,
+      college: wx.getStorageSync('myInfo').college,
     })
   },
 })

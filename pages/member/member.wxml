@@ -12,7 +12,7 @@
 
 		<view class="item">
 			<view class="count" style="font-size:40rpx">
-				{{teamInfo.tRemain}}
+				{{teamInfo.tRemain?teamInfo.tRemain:0}}
 			</view>
 			<view class="discribe">
 				剩余名额

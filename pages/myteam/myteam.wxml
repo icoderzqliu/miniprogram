@@ -36,7 +36,7 @@
 			<view class="bar" style="background:#C9C9C9;"></view>
 			<view class="item">
 				<view class="count">
-					{{teamInfo.tRemain}}
+					{{teamInfo.tRemain?teamInfo.tRemain:0}}
 				</view>
 				<view class="discribe">
 					<text class="cuIcon-communityfill text-grey"></text>剩余名额

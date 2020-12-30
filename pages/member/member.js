@@ -31,7 +31,7 @@ Page({
     var tRemain = "teamInfo.tRemain"
     this.setData({
       [tInvited]: options.tInvited,
-      [tRemain]: options.tRemain,
+      [tRemain]: options.tRemain?options.tRemain:0,
     })
     for(var i=0;i<this.data.teamInfo.tInvited;i++){
       this.setData({

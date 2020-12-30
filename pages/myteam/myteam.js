@@ -10,13 +10,13 @@ Page({
     "showModal": false, //show modal
     // teamName:'',
     teamInfo:{
-      "tName": "大广赛招募队员",
+      "tName": "队伍标题",
       "tId": 0,
       "tView": 15,
       "tInvite": 8,
       "tContact": 2,
       "tInvited": 3,
-      "tRemain": 2,
+      "tRemain": 0,
       "tLastUpdate": wx.getStorageSync('editTeamDate')
     }
     // "teamNames": ["大广赛招募队员", "第二个比赛队伍名"], //for select box
@@ -68,8 +68,9 @@ Page({
   },
 
   navToMember: function () {
+    var tRemain = this.data.teamInfo.tRemain?this.data.teamInfo.tRemain:'0'
     wx.navigateTo({
-      url: '../member/member?tInvited='+this.data.teamInfo.tInvited+'&tRemain='+this.data.teamInfo.tRemain,
+      url: '../member/member?tInvited='+this.data.teamInfo.tInvited+'&tRemain='+tRemain,
     })
   },
 
@@ -101,7 +102,7 @@ Page({
     this.setData({
       [teamName] : wx.getStorageSync('teamInformation').title,
       [editTeamDate]:wx.getStorageSync('editTeamDate'),
-      [remainNumber]:wx.getStorageSync('teamInformation').teamNumber-invitedNumber
+      [remainNumber]:(wx.getStorageSync('teamInformation').teamNumber-invitedNumber)>=0?(wx.getStorageSync('teamInformation').teamNumber-invitedNumber):0
     })
   },
 

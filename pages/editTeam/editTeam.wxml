@@ -55,10 +55,9 @@
 
 	<view class="cu-form-group">
 		<view class="title">设置截止时间</view>
-		<picker name="endDate" mode="date" value="{{teamInfo.endDate}}" start="2020-01-01" end="2050-12-31" bindchange="DateChange"
-			>
+		<picker name="endDate" mode="date" value="{{teamInfo.endDate}}" start="2020-01-01" end="2050-12-31" bindchange="DateChange">
 			<view class="picker">
-				{{teamInfo.endDate}}
+				{{teamInfo.endDate?teamInfo.endDate:'不设定'}}
 			</view>
 		</picker>
 	</view>

@@ -23,6 +23,7 @@
         "compileHotReLoad": false,
         "useMultiFrameRuntime": true,
         "useApiHook": true,
+        "useApiHostProcess": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
@@ -36,12 +37,11 @@
         "userConfirmedBundleSwitch": false,
         "packNpmManually": false,
         "packNpmRelationList": [],
-        "minifyWXSS": true,
-        "useApiHostProcess": false
+        "minifyWXSS": true
     },
     "compileType": "miniprogram",
     "libVersion": "2.13.0",
-    "appid": "wx4b0fa5a041822c87",
+    "appid": "wxcb952a0c35919749",
     "projectname": "MINE",
     "debugOptions": {
         "hidedInDevtools": []

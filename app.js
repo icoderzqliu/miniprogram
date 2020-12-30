@@ -1,5 +1,8 @@
 //app.js
 App({
+  data: {
+    openid: ''
+  },
   onLaunch: function () {
 
     // 登录
@@ -8,7 +11,13 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         console.log(res)
         wx.request({
-          url: 'url',
+          url: 'https://api.weixin.qq.com/sns/jscode2session',
+          data: {
+            appid: 'wxcb952a0c35919749', //AppID
+            secret: '21db90371e2241d3fee0c344b555528e', //secret密钥
+            grant_type: 'authorization_code',
+            js_code: res.code
+          }
         })
       }
     })
